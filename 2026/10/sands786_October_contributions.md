@@ -34,3 +34,16 @@ A summary of security contributions by sands786 in October 2026:
 - The report showed that oversized foreign proposals silently stall the shard for the epoch.
 - These contributions are tracked by tari-project/special_contributions#149.
 
+ ## [Bug_Hunt] Unauthenticated ForeignProposal validation cost denial of service pins consensus worker (GHSA-g592-vph9-hm4g)
+
+- **Severity:** Low (published)
+- **Package:** tari_consensus <= 0.43.0
+- **Summary:** Unauthenticated `ForeignProposal` messages reach committee resolution and signature verification before rejection, allowing an attacker to pin the consensus worker with validation-cost denial of service.
+- **Fix:** tari-project/tari-ootle#2920
+- **Retro bounty issue:** tari-project/special_contributions#178
+
+- Reported an unauthenticated ForeignProposal validation cost denial of service vulnerability in `tari-ootle` through GitHub Security Advisories ( GHSA-g592-vph9-hm4g ).
+- The report showed that unauthenticated ForeignProposal validation cost pins the consensus worker.
+- These contributions are tracked by tari-project/special_contributions#178.
+
+
