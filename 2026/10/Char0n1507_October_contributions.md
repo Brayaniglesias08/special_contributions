@@ -34,4 +34,13 @@ tari_indexer unauthenticated GraphQL endpoint has no per-request
 complexity limit, enabling alias amplification DoS (CWE-770) in
 tari-ootle. The fix was applied by the Tari team in tari-ootle#2926.
 
+## Report 5 - GHSA-95fq-78jc-hrqp
+
+Reported by (@Char0n1507)
+
+Engine-op host work unmetered in WasmProcess::handle leading to 
+~800x CPU amplification DoS against consensus validation in 
+tari-ootle. The fix was applied by the Tari team in 
+tari-ootle#2934.
+
 Technical details remain in the advisory until it is published.
