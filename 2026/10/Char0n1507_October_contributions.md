@@ -17,4 +17,21 @@ leading to remote unauthenticated memory exhaustion (OOM) of validator
 nodes in tari-ootle. The fix was applied by the Tari team in 
 tari-ootle#2887.
 
+## Report 3 - GHSA-96fw-3mr9-2qq2
+
+Reported by (@Char0n1507)
+
+Unauthenticated single-peer fill of the 64 MiB consensus future-view
+buffer at the nearest view permanently locks out honest proposals and
+votes in tari-ootle. The fix was applied by the Tari team in
+tari-ootle#2921.
+
+## Report 4 - GHSA-5pw5-mf52-mfj6
+
+Reported by (@Char0n1507)
+
+tari_indexer unauthenticated GraphQL endpoint has no per-request
+complexity limit, enabling alias amplification DoS (CWE-770) in
+tari-ootle. The fix was applied by the Tari team in tari-ootle#2926.
+
 Technical details remain in the advisory until it is published.
