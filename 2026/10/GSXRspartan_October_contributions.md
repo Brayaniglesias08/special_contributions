@@ -32,3 +32,8 @@ A summary of security contributions by GSXRspartan in October 2026:
 * Provided deterministic regression evidence showing the overflow reaches the release-build abort behavior under the affected conditions.
 * The vulnerability was responsibly disclosed and subsequently fixed separately by the Tari team in `tari-project/tari-ootle#2825`.
 * This contribution is tracked by `tari-project/special_contributions#100`.
+
+* Reported a Tari Ootle validator parked-block storage exhaustion vulnerability through GitHub Security Advisories (`GHSA-95xj-f7cc-px8c`).
+* The report demonstrated that a Byzantine committee member could cause unbounded validator parked-block storage growth through replayed-QC catch-up blocks referencing absent transactions, which were durably persisted and never garbage-collected.
+* The vulnerability was responsibly disclosed without interacting with any shared network and subsequently fixed separately by the Tari team in `tari-project/tari-ootle#2929`.
+* This contribution is tracked by `tari-project/special_contributions#201`.
