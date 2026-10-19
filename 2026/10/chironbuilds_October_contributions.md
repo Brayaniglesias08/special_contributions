@@ -29,3 +29,5 @@ A summary of security contributions by chironbuilds in October 2026:
 * The report showed that the wallet applied an unverified finalization diff taken from a single committee member's first answer, letting one malicious validator mark real inputs spent, record phantom change, or release the locks of committed transactions.
 * Testing was performed locally only; no shared network was touched.
 * Coordinated the finding through private disclosure; the fix was applied by the Tari team in `tari-ootle#2838`. Technical details remain in the advisory until it is published. The contribution is tracked in `tari-project/special_contributions#108`.
+
+* Reported a security vulnerability in `tari-ootle`: the engine compiles stored template binaries without re-checking them against the template address (a defence-in-depth gap), tracked in `ISSUE-2847`. The report included a root-cause analysis, a proof of concept where applicable, and a suggested fix; testing was performed locally only. Coordinated through private disclosure; technical details remain in the advisory until it is published. This contribution is tracked in `tari-project/special_contributions#243`.
