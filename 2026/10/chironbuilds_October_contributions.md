@@ -29,3 +29,5 @@ A summary of security contributions by chironbuilds in October 2026:
 * The report showed that the wallet applied an unverified finalization diff taken from a single committee member's first answer, letting one malicious validator mark real inputs spent, record phantom change, or release the locks of committed transactions.
 * Testing was performed locally only; no shared network was touched.
 * Coordinated the finding through private disclosure; the fix was applied by the Tari team in `tari-ootle#2838`. Technical details remain in the advisory until it is published. The contribution is tracked in `tari-project/special_contributions#108`.
+
+* Contributed a networking fix to `tari-ootle` that adds a transport upgrade timeout to bound pending inbound connections, so stalled or slow handshakes can no longer hold pending-connection slots indefinitely and exhaust a validator's inbound capacity. The fix was applied by the Tari team in `tari-ootle#2948`. This contribution is tracked in `tari-project/special_contributions#212`.
