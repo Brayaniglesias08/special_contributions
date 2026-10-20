@@ -7,3 +7,8 @@ A summary of contributions by Vallejo1921 in October 2026:
 - Replaced the version-blind collection with an explicit loop that verifies that duplicate pledges for the same requirement match expected versions (`existing.version() == version`), returning an `InvariantError` if mismatched.
 - Merged into `development` by the Tari team.
 - This contribution is tracked by `tari-project/special_contributions#218`.
+- Contributed a consensus fix to `tari-ootle` in [tari-project/tari-ootle#2912](https://github.com/tari-project/tari-ootle/pull/2912).
+- The fix ensures deterministic local certificate construction by sorting signatures when building `ProposalCertificate` and `TimeoutCertificate` from collected votes.
+- Prevents nondeterministic certificate IDs and canonical vote ordering discrepancies across validator nodes.
+- Merged into `development` by the Tari team.
+- This contribution is tracked by `tari-project/special_contributions#259`.
