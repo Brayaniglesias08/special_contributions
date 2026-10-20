@@ -7,3 +7,19 @@ A summary of contributions by Vallejo1921 in October 2026:
 - Replaced the version-blind collection with an explicit loop that verifies that duplicate pledges for the same requirement match expected versions (`existing.version() == version`), returning an `InvariantError` if mismatched.
 - Merged into `development` by the Tari team.
 - This contribution is tracked by `tari-project/special_contributions#218`.
+- Contributed a consensus fix to `tari-ootle` in [tari-project/tari-ootle#2912](https://github.com/tari-project/tari-ootle/pull/2912).
+- The fix ensures deterministic local certificate construction by sorting signatures when building `ProposalCertificate` and `TimeoutCertificate` from collected votes.
+- Prevents nondeterministic certificate IDs and canonical vote ordering discrepancies across validator nodes.
+- Merged into `development` by the Tari team.
+- This contribution is tracked by `tari-project/special_contributions#259`.
+- Contributed an indexer fix to `tari-ootle` in [tari-project/tari-ootle#2913](https://github.com/tari-project/tari-ootle/pull/2913).
+- The fix verifies the template address against its published binary hash at the network boundary before caching in `tari_indexer_lib`, discarding responses from Byzantine validator nodes and querying honest members.
+- Prevents cache poisoning and address spoofing for published WASM templates.
+- Merged into `development` by the Tari team.
+- This contribution is tracked by `tari-project/special_contributions#242`.
+- Contributed a networking fix to `tari-ootle` in [tari-project/tari-ootle#2914](https://github.com/tari-project/tari-ootle/pull/2914).
+- The fix enforces cryptographic signature verification on signed peer records and rejects future-skewed timestamps before caching them in `libp2p-peersync`.
+- Prevents malicious or unauthenticated peers from poisoning the peer store or eclipsing routing tables.
+- Merged into `development` by the Tari team.
+- This contribution is tracked by `tari-project/special_contributions#270`.
+
