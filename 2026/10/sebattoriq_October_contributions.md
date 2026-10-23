@@ -1,0 +1,3 @@
+Adds sebattoriq's October 2026 security contribution.
+Fixes #308
+12kULobjcDdPSwMc7AVXN2HaHbLbaRwjaLsEFSBmW4CWiw9YaJsMhhiiG6EKBCGMMWPa7jZv4cyAMRMYs3rWiHrYut
