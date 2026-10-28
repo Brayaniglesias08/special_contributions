@@ -7,3 +7,8 @@ A summary of security contributions by chironbuilds in September 2026:
 * Provided root-cause analysis, a reachability walkthrough, a minimal proof of concept, and a suggested fix.
 * Testing was performed locally only; no shared network was touched.
 * Coordinated the finding through private disclosure; the fix was applied by the Tari team. Technical details remain in the advisory until it is published. The contribution is tracked in `tari-project/special_contributions#36`.
+
+A summary of build contributions by chironbuilds in September 2026:
+
+* Won the September 2026 Build Contest with Sapient, a browser-extension wallet for Tari Ootle.
+* The contribution is tracked in `tari-project/special_contributions#340`.
