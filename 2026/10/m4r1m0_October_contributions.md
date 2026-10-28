@@ -204,4 +204,178 @@ The report showed that indexer REST client parses an unbounded error body into `
 
 Tracked by `tari-project/special_contributions#295`.
 
+## Report 25 — issue #150
+
+Remote validator crash via u64::MAX RPC deadline (Instant overflow panic).
+
+The report showed that remote validator crash via u64::MAX RPC deadline (Instant overflow panic). The fix was applied by the Tari team in `tari-ootle#2958`.
+
+Reported by email to the Tari security team.
+
+Tracked by `tari-project/special_contributions#150`.
+
+## Report 26 — GHSA-2hjq-c37v-g792
+
+Unbounded batch buffering in state sync (has_more) lets a serving peer OOM the validator.
+
+The report showed that unbounded batch buffering in state sync (has_more) lets a serving peer OOM the validator. The fix was applied by the Tari team in `tari-ootle#2767`.
+
+Tracked by `tari-project/special_contributions#151`.
+
+## Report 27 — issue #160
+
+Relay poisoning via untrusted identify claims causes unbounded relay set and dial storm.
+
+The report showed that relay poisoning via untrusted identify claims causes unbounded relay set and dial storm. The fix was applied by the Tari team in `tari-ootle#2896`.
+
+Reported by email to the Tari security team.
+
+Tracked by `tari-project/special_contributions#160`.
+
+## Report 28 — issue #164
+
+Liquidity pool traps confidential commitments deposited via swap.
+
+The report showed that liquidity pool traps confidential commitments deposited via swap. The fix was applied by the Tari team in `tari-ootle#2900`.
+
+Reported by email to the Tari security team.
+
+Tracked by `tari-project/special_contributions#164`.
+
+## Report 29 — issue #166
+
+Malicious indexer's fabricated commit result permanently freezes wallet confidential funds.
+
+The report showed that malicious indexer's fabricated commit result permanently freezes wallet confidential funds. The fix was applied by the Tari team in `tari-ootle#2898`.
+
+Reported by email to the Tari security team.
+
+Tracked by `tari-project/special_contributions#166`.
+
+## Report 30 — issue #168
+
+Indexer ingests unverified substate data from a single committee member.
+
+The report showed that indexer ingests unverified substate data from a single committee member. The fix was applied by the Tari team in `tari-ootle#2901`.
+
+Reported by email to the Tari security team.
+
+Tracked by `tari-project/special_contributions#168`.
+
+## Report 31 — GHSA-p26x-5g5v-rmwc
+
+Cross-shard double-spend via forged foreign-proposal pledge values (BlockPledge not committed to by quorum certificates).
+
+The report showed that cross-shard double-spend via forged foreign-proposal pledge values (BlockPledge not committed to by quorum certificates). The fix was applied by the Tari team in `tari-ootle#2798`.
+
+Tracked by `tari-project/special_contributions#194`.
+
+## Report 32 — issue #202
+
+Indexer state-sync permanent wedge via duplicate updates in one version.
+
+The report showed that indexer state-sync permanent wedge via duplicate updates in one version. The fix was applied by the Tari team in `tari-ootle#2901`.
+
+Reported by email to the Tari security team.
+
+Tracked by `tari-project/special_contributions#202`.
+
+## Report 33 — issue #204
+
+Unbounded outbound message queue allows OOM via non-reading peer.
+
+The report showed that unbounded outbound message queue allows OOM via non-reading peer. The fix was applied by the Tari team in `tari-ootle#2770`.
+
+Reported by email to the Tari security team.
+
+Tracked by `tari-project/special_contributions#204`.
+
+## Report 34 — GHSA-hr7f-cc6j-x9h6
+
+Connection flood: no per-IP or total connection limits — unbounded connections from a single attacker.
+
+The report showed that connection flood: no per-IP or total connection limits — unbounded connections from a single attacker. The fix was applied by the Tari team in `tari-ootle#2816`.
+
+Tracked by `tari-project/special_contributions#205`.
+
+## Report 35 — GHSA-4x2w-2823-87w4
+
+Fabricated foreign proposals accepted on the attached-proposal path (no commit-proof validation) - deterministic cross-shard double-spend.
+
+The report showed that fabricated foreign proposals accepted on the attached-proposal path (no commit-proof validation) - deterministic cross-shard double-spend. The fix was applied by the Tari team in `tari-ootle#2798`.
+
+Tracked by `tari-project/special_contributions#206`.
+
+## Report 36 — GHSA-qcp7-wfj3-pfqr
+
+Malicious indexer destroys L1 burn claim proceeds via fabricated dry-run fee result (auto-claim).
+
+The report showed that malicious indexer destroys L1 burn claim proceeds via fabricated dry-run fee result (auto-claim). The fix was applied by the Tari team in `tari-ootle#2803`.
+
+Tracked by `tari-project/special_contributions#207`.
+
+## Report 37 — GHSA-7p55-c95r-86v6
+
+A serving validator can OOM (and stall) a substate-batch client through an unbounded `missing` list.
+
+The report showed that a serving validator can OOM (and stall) a substate-batch client through an unbounded `missing` list. The fix was applied by the Tari team in `tari-ootle#2953`.
+
+Tracked by `tari-project/special_contributions#220`.
+
+## Report 38 — GHSA-x4mr-j9g9-vrvp
+
+Unauthenticated peer makes a validator stream its entire committed history (`sync_blocks` has no end bound and no work budget).
+
+The report showed that unauthenticated peer makes a validator stream its entire committed history (`sync_blocks` has no end bound and no work budget). The fix was applied by the Tari team in `tari-ootle#2965`.
+
+Tracked by `tari-project/special_contributions#231`.
+
+## Report 39 — GHSA-mjmv-783x-rxh7
+
+TIP-0006 spend-script predicates mutate engine state from the "side-effect-free" read-only frame (address allocation / signer-proof creation escape the sandbox deny-list).
+
+The report showed that TIP-0006 spend-script predicates mutate engine state from the "side-effect-free" read-only frame (address allocation / signer-proof creation escape the sandbox deny-list). The fix was applied by the Tari team in `tari-ootle#2970`.
+
+Tracked by `tari-project/special_contributions#236`.
+
+## Report 40 — GHSA-57r9-hc99-grj4
+
+Spend-script leaf validation loads (and can compile) the referenced template without charging the template-load fee.
+
+The report showed that spend-script leaf validation loads (and can compile) the referenced template without charging the template-load fee. The fix was applied by the Tari team in `tari-ootle#3039`.
+
+Tracked by `tari-project/special_contributions#289`.
+
+## Report 41 — GHSA-6pr9-gm2g-pjvp
+
+Absence from the indexer's full-UTXO lookup permanently erases an owned stealth UTXO from the wallet.
+
+The report showed that absence from the indexer's full-UTXO lookup permanently erases an owned stealth UTXO from the wallet. The fix was applied by the Tari team in `tari-ootle#3055`.
+
+Tracked by `tari-project/special_contributions#298`.
+
+## Report 42 — GHSA-rxpr-jx2j-9x74
+
+State sync commits a create/destroy pair no block committed — a serving peer plants permanent substate records and a poisoned `HeadIndex` (version `u64::MAX`).
+
+The report showed that state sync commits a create/destroy pair no block committed — a serving peer plants permanent substate records and a poisoned `HeadIndex` (version `u64::MAX`). The fix was applied by the Tari team in `tari-ootle#3083`.
+
+Tracked by `tari-project/special_contributions#302`.
+
+## Report 43 — GHSA-wh7f-8p58-g7qq
+
+Outbound messaging stream permanently black-holed on an I/O negotiation failure (silent message loss + unbounded retention).
+
+The report showed that outbound messaging stream permanently black-holed on an I/O negotiation failure (silent message loss + unbounded retention). The fix was applied by the Tari team in `tari-ootle#3071`.
+
+Tracked by `tari-project/special_contributions#303`.
+
+## Report 44 — GHSA-hg9r-xqm4-mc72
+
+Walletd approval card: a caller-chosen `value_summary` contradicts a spend hidden in transaction blobs.
+
+The report showed that walletd approval card: a caller-chosen `value_summary` contradicts a spend hidden in transaction blobs. The fix was applied by the Tari team in `tari-ootle#3124`.
+
+Tracked by `tari-project/special_contributions#322`.
+
 Technical details remain in each advisory, or with the Tari security team for reports made by email, until published.
