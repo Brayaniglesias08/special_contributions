@@ -16,6 +16,13 @@ The report identified that the StealthUtxoBurn path could bypass the expected re
 The fix was implemented separately. This file records the contribution for the retro bounty; no code changes are required.
 
 
+# Security contribution for issue #297
+
+Bug report for GHSA-28cx-xpx5-3xq2.
+
+The report identified that omitted confidential output poisons wallet scan state after indexer recovery.
+
+The fix was implemented separately by @sdbondi in tari-project/tari-ootle#3052. This file records the contribution for the retro bounty; no code changes are required.
 # Security contribution for issue #296
 
 Security report for GHSA-52vp-j7ph-m3g3.
