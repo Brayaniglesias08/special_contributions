@@ -14,3 +14,12 @@ Security report for the direct stealth UTXO burn authorization-bypass issue ackn
 The report identified that the StealthUtxoBurn path could bypass the expected resource authorization hook.
 
 The fix was implemented separately. This file records the contribution for the retro bounty; no code changes are required.
+
+
+# Security contribution for issue #296
+
+Security report for GHSA-52vp-j7ph-m3g3.
+
+The report identified that forged UTXO Spent update persistently hides an unspent wallet output.
+
+The fix was implemented separately by @sdbondi in tari-project/tari-ootle#3057. This file records the contribution for the retro bounty; no code changes are required.
