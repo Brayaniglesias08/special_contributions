@@ -14,3 +14,11 @@ Security report for the direct stealth UTXO burn authorization-bypass issue ackn
 The report identified that the StealthUtxoBurn path could bypass the expected resource authorization hook.
 
 The fix was implemented separately. This file records the contribution for the retro bounty; no code changes are required.
+
+# Security contribution for issue #316
+
+Security report for GHSA-x3rp-9mf5-53mm.
+
+The report identified that manifest global reuse amplifies authorized wallet requests into stored over-limit dry runs.
+
+The fix was implemented separately by @sdbondi in tari-project/tari-ootle#3121. This file records the contribution for the retro bounty; no code changes are required.
