@@ -14,3 +14,12 @@ Security report for the direct stealth UTXO burn authorization-bypass issue ackn
 The report identified that the StealthUtxoBurn path could bypass the expected resource authorization hook.
 
 The fix was implemented separately. This file records the contribution for the retro bounty; no code changes are required.
+
+
+# Security contribution for issue #275
+
+Security report for GHSA-8v88-58fr-4878.
+
+The report identified that mutable authorization signature order transfers new-account ownership to an attacker.
+
+The fix was implemented separately by @sdbondi in tari-project/tari-ootle#3019. This file records the contribution for the retro bounty; no code changes are required.
