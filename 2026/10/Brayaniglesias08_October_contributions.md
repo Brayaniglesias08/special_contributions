@@ -14,3 +14,8 @@ A summary of contributions by @Brayaniglesias08 in October 2026:
 - **Advisory:** [GHSA-rx9h-rfmq-vmp6](https://github.com/tari-project/tari/security/advisories/GHSA-rx9h-rfmq-vmp6)
 - **Issue:** [tari-project/special_contributions#352](https://github.com/tari-project/special_contributions/issues/352)
 - **Summary:** `Require a sorted body before treating it as the one its header commits`
+
+### Contribution (`tari-project/tari-ootle#3192` - Issue #374)
+- **PR:** [tari-project/tari-ootle#3192](https://github.com/tari-project/tari-ootle/pull/3192)
+- **Issue:** [tari-project/special_contributions#374](https://github.com/tari-project/special_contributions/issues/374)
+- **Summary:** `fix(epoch-oracles): prevent premature tip short-circuit across multi-batch scans and lost DoneForNow`
