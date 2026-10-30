@@ -23,3 +23,17 @@ Bug report for GHSA-28cx-xpx5-3xq2.
 The report identified that omitted confidential output poisons wallet scan state after indexer recovery.
 
 The fix was implemented separately by @sdbondi in tari-project/tari-ootle#3052. This file records the contribution for the retro bounty; no code changes are required.
+# Security contribution for issue #296
+
+Security report for GHSA-52vp-j7ph-m3g3.
+
+The report identified that forged UTXO Spent update persistently hides an unspent wallet output.
+
+The fix was implemented separately by @sdbondi in tari-project/tari-ootle#3057. This file records the contribution for the retro bounty; no code changes are required.
+# Security contribution for issue #316
+
+Security report for GHSA-x3rp-9mf5-53mm.
+
+The report identified that manifest global reuse amplifies authorized wallet requests into stored over-limit dry runs.
+
+The fix was implemented separately by @sdbondi in tari-project/tari-ootle#3121. This file records the contribution for the retro bounty; no code changes are required.
