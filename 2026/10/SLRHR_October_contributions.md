@@ -14,3 +14,12 @@ Security report for the direct stealth UTXO burn authorization-bypass issue ackn
 The report identified that the StealthUtxoBurn path could bypass the expected resource authorization hook.
 
 The fix was implemented separately. This file records the contribution for the retro bounty; no code changes are required.
+
+
+# Security contribution for issue #175
+
+Security report for GHSA-8vmv-4hvw-pp8q.
+
+The report identified that mixed-epoch state sync persists substates inconsistent with the authenticated state tree.
+
+The fix was implemented separately by @sdbondi in tari-project/tari-ootle#2910. This file records the contribution for the retro bounty; no code changes are required.
