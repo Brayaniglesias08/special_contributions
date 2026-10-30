@@ -16,6 +16,13 @@ The report identified that the StealthUtxoBurn path could bypass the expected re
 The fix was implemented separately. This file records the contribution for the retro bounty; no code changes are required.
 
 
+# Security contribution for issue #258
+
+Security report for GHSA-cxj9-vwm7-5wjg.
+
+The report identified that uTXO stream repeats resource-wide SQLite scans for every requested shard.
+
+The fix was implemented separately by @sdbondi in tari-project/tari-ootle#2989. This file records the contribution for the retro bounty; no code changes are required.
 # Security contribution for issue #297
 
 Bug report for GHSA-28cx-xpx5-3xq2.
